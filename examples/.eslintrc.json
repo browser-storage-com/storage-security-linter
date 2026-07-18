@@ -1,0 +1,19 @@
+{
+  "root": true,
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "es2022": true
+  },
+  "plugins": ["storage-security"],
+  "extends": ["plugin:storage-security/recommended"],
+  "rules": {
+    "storage-security/no-unencrypted-storage-write": [
+      "warn",
+      { "wrappers": ["encrypt", "secureStore"] }
+    ]
+  }
+}

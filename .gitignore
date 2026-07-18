@@ -1,0 +1,13 @@
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.eslintcache
+coverage/
+dist/
+*.tgz
+.DS_Store
+.env
+.env.*
+.idea/
+.vscode/

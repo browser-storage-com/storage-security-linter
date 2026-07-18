@@ -1,0 +1,57 @@
+{
+  "name": "eslint-plugin-storage-security",
+  "version": "0.1.0",
+  "description": "ESLint plugin that flags risky browser-storage usage (tokens/PII in localStorage, missing try/catch, unguarded JSON.parse) and suggests safer patterns.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "default": "./lib/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "docs",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "lint": "eslint lib test"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "browser-storage",
+    "security",
+    "localstorage",
+    "sessionstorage",
+    "indexeddb",
+    "jwt",
+    "xss",
+    "pii"
+  ],
+  "author": "browser-storage.com",
+  "license": "MIT",
+  "homepage": "https://github.com/browser-storage-com/storage-security-linter#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/browser-storage-com/storage-security-linter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/browser-storage-com/storage-security-linter/issues"
+  },
+  "peerDependencies": {
+    "eslint": ">=8"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
